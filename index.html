@@ -64,7 +64,9 @@
             video.onloadedmetadata = function(e) {
               console.log('video', video)
             };
-            video.play();
+            setTimeout(() => {
+              video.play();
+            }, 1000)
           })
           .catch(function(err) { console.log(err.name + ": " + err.message); }); // 总是在最后检查错误
         })

@@ -62,9 +62,11 @@
             console.log(mediaStream)
             video.srcObject = mediaStream;
             video.onloadedmetadata = function(e) {
-              console.log('video', video)
+              console.log('video', video.play())
+
             };
             setTimeout(() => {
+              console.log('video', video.play())
               video.play();
             }, 1000)
           })

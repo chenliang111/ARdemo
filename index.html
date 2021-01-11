@@ -63,8 +63,8 @@
             video.srcObject = mediaStream;
             video.onloadedmetadata = function(e) {
               console.log('video', video)
-              video.play();
             };
+            video.play();
           })
           .catch(function(err) { console.log(err.name + ": " + err.message); }); // 总是在最后检查错误
         })
